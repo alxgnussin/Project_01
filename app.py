@@ -74,11 +74,8 @@ def departure_select(departure):
     return keys, tours_select
 
 
-def random_generator(tour_id=None):
-    if tour_id is None:
-        keys = []
-    else:
-        keys = tour_id
+def random_generator():
+    keys = []
     while len(keys) < 6:
         key = randint(1, len(tours))
         if key in keys:
