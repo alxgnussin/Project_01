@@ -1,17 +1,8 @@
 {% extends 'base.html' %}
 {% block container %}
 
-  {% if my_link=="msk" %}
-  <h1 class="display-5 mt-4">Летим из Москвы</h1>
-  {% elif my_link=="spb" %}
-  <h1 class="display-5 mt-4">Летим из Петербурга</h1>
-  {% elif my_link=="nsk" %}
-  <h1 class="display-5 mt-4">Летим из Новосибирска</h1>
-  {% elif my_link=="ekb" %}
-  <h1 class="display-5 mt-4">Летим из Екатеринбурга</h1>
-  {% elif my_link=="kazan" %}
-  <h1 class="display-5 mt-4">Летим из Казани</h1>
-  {% endif %}
+  <h1 class="display-5 mt-4">Летим {{tour_from}}</h1>
+
 
   <p class="mb-4">Найдено {{tours|length}} туров, от {{price|min}} до {{price|max}} и от {{nights|min}} ночей до
     {{nights|max}} ночей</p>
