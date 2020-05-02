@@ -25,7 +25,6 @@ def render_departure(departure):
         my_link=departure,
         keys=departure_select(departure)[0],
         tours=tours,
-        # sel_tours=departure_select(departure)[1],
         price=size(sel_tours=departure_select(departure)[1], select="price"),
         nights=size(sel_tours=departure_select(departure)[1], select="nights"),
         tour_from=departure_from(departure)
