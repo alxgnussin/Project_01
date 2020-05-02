@@ -67,4 +67,5 @@ def random_generator(tour_id=None):
     return keys
 
 
-app.run()
+if __name__ == '__main__':
+    app.run()
